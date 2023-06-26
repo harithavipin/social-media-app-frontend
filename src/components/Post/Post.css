@@ -1,0 +1,25 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    margin-top: 1rem;
+
+}
+
+.post>img {
+    width: 100%;
+    max-height: 20rem;
+    /* image cover cheythe varan */
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.postreact {
+    display: flex;
+    /* entire width edekkinde.so start muthal varan flex start kodekka */
+    justify-content: start;
+    gap: 1.5rem;
+}

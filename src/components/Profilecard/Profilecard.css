@@ -1,0 +1,82 @@
+.profilecard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    position: relative;
+    gap: 1rem;
+    /* border radius kodethittum  vannillenki overflow-x clip aaki kodekka. */
+    overflow-x: clip;
+    background: var(--cardColor);
+}
+.profileimages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileimages>img:nth-child(1) {
+    width: 100%;
+   
+}
+.profileimages>img:nth-child(2) {
+    position: absolute;
+    border-radius: 50%;
+    width: 6rem;
+    bottom: -3rem;
+    box-shadow: var(--profileShadow);
+}
+.profilename {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+.profilename>span:nth-child(1) {
+font-weight: bold;
+}
+.profilestatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profilestatus > hr{
+    width: 85%;
+    border: 1px solid #cfcdcd;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.follow>span:nth-child(1){
+    font-weight: bold;
+}
+.follow>span:nth-child(2){
+    color:var(--gray) ;
+}
+
+.profilestatus .verticalline{
+   height: 110%;
+    border-left : 2px solid #cfcdcd;
+}
+.profilestatus > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+.profilecard .myprofile{
+    text-align: center;
+    color: orangered;
+    cursor: pointer;
+    font-weight: bold;
+    gap: 1.5rem;
+    margin-bottom: 15px;
+}
